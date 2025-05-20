@@ -149,8 +149,7 @@ const Navbar1 = () => {
 
   return (
     // <div className="navbar fixed z-10 w-full bg-black h-20 text-white px-4">
-    // <div className="navbar fixed w-full bg-black h-20 text-white px-4">
-      <div className="navbar fixed top-0 left-0 w-full bg-cyan-700 h-20 text-white px-4 z-50">
+    <div className="navbar fixed top-0 left-0 w-full bg-cyan-700 h-20 text-white px-4 z-50">
       <div className="navbar-start">
         <div className="dropdown">
           <button tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -240,6 +239,7 @@ const Navbar1 = () => {
       <div className="navbar-end hidden lg:flex items-center space-x-3">
         <a
           className="btn btn-neutral"
+          // href="https://drive.google.com/file/d/1OxYll_P_45jmlzNvZVTGKABn4ZTJRCP2/view?usp=drive_link"
           href="https://drive.google.com/file/d/1zao0m8IOgjcMo0fENxpWzZ0UIySmZ_3M/view?usp=drive_link"
           target="_blank"
           rel="noopener noreferrer"
