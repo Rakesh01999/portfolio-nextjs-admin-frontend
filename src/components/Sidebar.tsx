@@ -21,33 +21,41 @@ const Sidebar = () => {
         className="lg:hidden p-3 text-gray-700 fixed top-4 left-4 z-50 bg-white shadow-md rounded-md ml-10 mt-2"
         onClick={() => setIsOpen(!isOpen)}
       >
-        {isOpen ? <FaTimes className="h-6 w-6" /> : <FaBars className="h-6 w-6" />}
+        {isOpen ? (
+          <FaTimes className="h-6 w-6" />
+        ) : (
+          <FaBars className="h-6 w-6" />
+        )}
       </button>
 
       <div
-        className={`bg-slate-100 rounded-xl fixed lg:relative top-0 left-0 w-64 mt-24 lg:mt-20 transition-transform duration-300 lg:translate-x-0 z-50 ${
+        className={`bg-cyan-700 rounded-xl fixed lg:relative top-0 left-0 w-64 mt-24 lg:mt-20 transition-transform duration-300 lg:translate-x-0 z-50 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } lg:block overflow-y-auto max-h-[calc(100vh-5rem)]`}
       >
         <ul className="space-y-2 p-4">
-          <li>
-            <Link
-              href="/dashboard"
-              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
-              onClick={() => setIsOpen(false)}
-            >
-              <FaHome className="h-5 w-5" />
-              <span>Dashboard</span>
-            </Link>
-          </li>
+          <span className="text-white font-semibold">Dashboard Home</span>
+          <ul className="space-y-2 pl-6">
+            <li>
+              <Link
+                href="/dashboard"
+                // className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+                className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 hover:text-cyan-700 text-white"
+                onClick={() => setIsOpen(false)}
+              >
+                <FaHome className="h-5 w-5" />
+                <span>Dashboard</span>
+              </Link>
+            </li>
+          </ul>
 
           <li>
-            <span className="text-gray-600 font-semibold">Blog Management</span>
+            <span className="text-white font-semibold">Blog Management</span>
             <ul className="space-y-2 pl-6">
               <li>
                 <Link
                   href="/dashboard/blog/create"
-                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 hover:text-cyan-700 text-white"
                   onClick={() => setIsOpen(false)}
                 >
                   <FaPlus className="h-5 w-5" />
@@ -57,7 +65,7 @@ const Sidebar = () => {
               <li>
                 <Link
                   href="/dashboard/blog"
-                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 hover:text-cyan-700 text-white"
                   onClick={() => setIsOpen(false)}
                 >
                   <FaList className="h-5 w-5" />
@@ -67,7 +75,7 @@ const Sidebar = () => {
               <li>
                 <Link
                   href="/dashboard/blog/update"
-                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 hover:text-cyan-700 text-white"
                   onClick={() => setIsOpen(false)}
                 >
                   <FaEdit className="h-5 w-5" />
@@ -77,7 +85,7 @@ const Sidebar = () => {
               <li>
                 <Link
                   href="/dashboard/blog/delete"
-                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 hover:text-cyan-700 text-white"
                   onClick={() => setIsOpen(false)}
                 >
                   <FaTrash className="h-5 w-5" />
@@ -88,12 +96,12 @@ const Sidebar = () => {
           </li>
 
           <li>
-            <span className="text-gray-600 font-semibold">Project Management</span>
+            <span className="text-white font-semibold">Project Management</span>
             <ul className="space-y-2 pl-6">
               <li>
                 <Link
                   href="/dashboard/project/create"
-                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 hover:text-cyan-700 text-white"
                   onClick={() => setIsOpen(false)}
                 >
                   <FaPlus className="h-5 w-5" />
@@ -103,7 +111,7 @@ const Sidebar = () => {
               <li>
                 <Link
                   href="/dashboard/project"
-                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 hover:text-cyan-700 text-white"
                   onClick={() => setIsOpen(false)}
                 >
                   <FaList className="h-5 w-5" />
@@ -113,7 +121,7 @@ const Sidebar = () => {
               <li>
                 <Link
                   href="/dashboard/project/update"
-                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 hover:text-cyan-700 text-white"
                   onClick={() => setIsOpen(false)}
                 >
                   <FaEdit className="h-5 w-5" />
@@ -123,7 +131,7 @@ const Sidebar = () => {
               <li>
                 <Link
                   href="/dashboard/project/delete"
-                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 hover:text-cyan-700 text-white"
                   onClick={() => setIsOpen(false)}
                 >
                   <FaTrash className="h-5 w-5" />
@@ -134,12 +142,14 @@ const Sidebar = () => {
           </li>
 
           <li>
-            <span className="text-gray-600 font-semibold">Experience Management</span>
+            <span className="text-white font-semibold">
+              Experience Management
+            </span>
             <ul className="space-y-2 pl-6">
               <li>
                 <Link
                   href="/dashboard/experience/create"
-                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 hover:text-cyan-700 text-white"
                   onClick={() => setIsOpen(false)}
                 >
                   <FaPlus className="h-5 w-5" />
@@ -149,7 +159,7 @@ const Sidebar = () => {
               <li>
                 <Link
                   href="/dashboard/experience/delete"
-                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
+                  className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 hover:text-cyan-700 text-white"
                   onClick={() => setIsOpen(false)}
                 >
                   <FaTrash className="h-5 w-5" />
@@ -159,16 +169,19 @@ const Sidebar = () => {
             </ul>
           </li>
 
-          <li>
-            <Link
-              href="/dashboard/message"
-              className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 text-gray-700"
-              onClick={() => setIsOpen(false)}
-            >
-              <FaEnvelopeOpen className="h-5 w-5" />
-              <span>Message Seen</span>
-            </Link>
-          </li>
+          <span className="text-white font-semibold">Messages</span>
+          <ul className="space-y-2 pl-6">
+            <li>
+              <Link
+                href="/dashboard/message"
+                className="flex items-center space-x-2 p-3 rounded-md hover:bg-gray-200 hover:text-cyan-700 text-white"
+                onClick={() => setIsOpen(false)}
+              >
+                <FaEnvelopeOpen className="h-5 w-5" />
+                <span> Seen Message</span>
+              </Link>
+            </li>
+          </ul>
         </ul>
       </div>
 

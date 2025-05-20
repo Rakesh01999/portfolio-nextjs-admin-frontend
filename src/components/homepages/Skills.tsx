@@ -52,28 +52,28 @@ const Skills = () => {
         </h1>
         <div className="flex justify-center items-center mt-4 space-x-6">
           <Link
-            href="https://codeforces.com/profile/nafis2000"
+            href="https://codeforces.com/profile/rk778"
             target="_blank"
             rel="noopener noreferrer"
           >
             <SiCodeforces className="text-4xl text-blue-600 hover:text-blue-800 transition-transform transform hover:scale-110" />
           </Link>
           <Link
-            href="https://www.codechef.com/users/nafis2000"
+            href="https://www.codechef.com/users/rk999"
             target="_blank"
             rel="noopener noreferrer"
           >
             <SiCodechef className="text-4xl text-red-600 hover:text-red-800 transition-transform transform hover:scale-110" />
           </Link>
           <Link
-            href="https://atcoder.jp/users/nafis2000?contestType=algo"
+            href="https://atcoder.jp/users/Rakesh01"
             target="_blank"
             rel="noopener noreferrer"
           >
             <GoCodeReview className="text-4xl text-gray-800 hover:text-gray-900 transition-transform transform hover:scale-110" />
           </Link>
           <Link
-            href="https://lightoj.com/user/nafis2001"
+            href="https://lightoj.com/user/rakeshbiswas"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -82,7 +82,7 @@ const Skills = () => {
             </span>
           </Link>
           <Link
-            href="https://leetcode.com/u/nafis2000/"
+            href="https://leetcode.com/u/rk778/"
             target="_blank"
             rel="noopener noreferrer"
           >

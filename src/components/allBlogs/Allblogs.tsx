@@ -59,7 +59,8 @@ const Allblogs = () => {
               ></div>
 
               <Link
-                href={`${`blogs/${proj._id}`}`}
+                // href={`${`blogs/${proj._id}`}`}
+                href={`/blogs/${proj._id}`}
                 className="text-blue-500 hover:text-blue-700 mt-2"
               >
                 View

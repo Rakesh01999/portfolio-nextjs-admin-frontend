@@ -86,7 +86,8 @@ const AllProject = () => {
                   <FaGithub className="text-2xl" />
                 </Link>
                 <Link
-                  href={`${`projects/${proj._id}`}`}
+                  // href={`${`/projects/${proj._id}`}`}
+                  href={`/projects/${proj._id}`}
                   className="text-blue-500 hover:text-blue-700"
                 >
                   Description

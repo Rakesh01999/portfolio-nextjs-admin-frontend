@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nafis portfolio",
-  description: "It is my professional portfolio where i introduced my skills",
+  title: "Rakesh Biswas | Portfolio",
+  description: "Explore the professional portfolio of Rakesh Biswas, showcasing expertise in full-stack web development, modern technologies, and real-world project experience.",
 };
 
 export default async function RootLayout({

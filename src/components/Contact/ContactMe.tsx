@@ -72,7 +72,7 @@ const ContactMe = () => {
               <FaLinkedinIn size={25} />
             </a>
             <a
-              href="https://github.com/nafis200"
+              href="https://github.com/Rakesh01999"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-gray-300 transition"

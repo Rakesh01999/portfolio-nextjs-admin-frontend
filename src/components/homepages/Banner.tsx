@@ -14,7 +14,7 @@ const Banner = () => {
           <div className=" w-full md:w-[70%]">
             <h1 className="animate__animated animate__fadeInLeft">
               <span className="text-[40px] md:text-4xl lg:text-6xl font-bold text-white">
-                Hi! I am Nafis Ahamed
+                Hi! I am Rakesh Biswas
               </span>
             </h1>
             <p className="text-[20px] md:text-2xl lg:text-4xl text-white">
