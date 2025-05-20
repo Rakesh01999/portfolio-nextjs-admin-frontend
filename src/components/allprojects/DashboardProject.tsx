@@ -41,17 +41,17 @@ const DashboardProject = () => {
   if (loading) return <p>Loading project...</p>;
 
   return (
-    <div className="section projects-section mx-4 md:mx-10 lg:mx-14 mb-20">
+    <div className="section projects-section mt-24 mx-4 md:mx-10 lg:mx-14 mb-20">
       <Fade>
-        
-        <h2 className="hover:text-blue-600 text-xl text-center md:text-[40px] font-bold mb-10">
+        {/* <h2 className="hover:text-blue-600 text-xl text-center md:text-[40px] font-bold mb-10"> */}
+        <h2 className="text-xl text-cyan-700 text-center md:text-[40px] font-bold mb-10">
           Projects
         </h2>
       </Fade>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-20 auto-rows-fr">
         {project?.map((proj) => (
           <Zoom key={proj._id}>
-            <div className="skill-category bg-base-100 border-2 border-blue-400 hover:border-cyan-300 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-cyan-200 transition-shadow duration-300 flex flex-col h-full">
+            <div className="skill-category bg-base-100 border-2 border-gray-400 hover:border-cyan-500 p-6 rounded-lg shadow-lg hover:shadow-2xl hover:shadow-cyan-200 transition-shadow duration-300 flex flex-col h-full">
               <div className="project-image mb-4">
                 <Image
                   src={proj.image}
@@ -72,7 +72,7 @@ const DashboardProject = () => {
               <div className="text-center flex justify-center space-x-4 mt-4">
                 <Link
                   href={proj.project_link}
-                  className="text-blue-500 hover:text-blue-700"
+                  className="text-cyan-600 hover:text-blue-700"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -80,7 +80,7 @@ const DashboardProject = () => {
                 </Link>
                 <Link
                   href={proj.github_link}
-                  className="text-blue-500 hover:text-blue-700"
+                  className="text-cyan-600 hover:text-blue-700"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -88,7 +88,7 @@ const DashboardProject = () => {
                 </Link>
                 <Link
                   href={`${`projects/${proj._id}`}`}
-                  className="text-blue-500 hover:text-blue-700"
+                  className="text-cyan-600 hover:text-blue-700 md:text-xl"
                 >
                   Description
                 </Link>
